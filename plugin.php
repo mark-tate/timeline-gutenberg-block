@@ -1,5 +1,11 @@
 <?php
 
+/**
+ * Plugin Name: Timeline Block
+ * Description: Timeline UI Component
+ * Version: 0.0.1
+ */
+ 
 defined( 'ABSPATH' ) || exit;
 
 function timeline_block() {
