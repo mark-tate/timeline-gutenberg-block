@@ -16,10 +16,10 @@ registerBlockType( 'mark-tate/timeline-block', {
 	example: {
 		attributes: {
 			events: [
-				'01/01/21 Created my first event',
-				'01/03/21 Created my second event',
-				'01/06/21 Created my third event',
-				'01/12/21 Created my third event',
+				'01/01/21/First event',
+				'01/03/21/Second event',
+				'01/06/21/Third event',
+				'01/12/21/Fourth event',
 			],
 		},
 	},
@@ -38,7 +38,7 @@ registerBlockType( 'mark-tate/timeline-block', {
 				<RichText
 					tagName="ul"
 					multiline="li"
-					placeholder="DD/MM/YYYY description"
+					placeholder="event/description"
 					value={ events }
 					onChange={ onChangeEvent }
 					className="event"
@@ -51,11 +51,10 @@ registerBlockType( 'mark-tate/timeline-block', {
 			attributes: { events },
 		} = props;
 		const timelineChildren = events.map( ( event ) => {
-			const splitRegExp = new RegExp( /(\S+)(.*)/ );
+			const splitRegExp = new RegExp( /(.*)(.*)/ );
 			const matches = splitRegExp.exec( event.props.children );
 			return `<VerticalTimelineElement
                     date="${ matches[ 1 ] }"
-                    iconStyle={{background: 'rgb(16, 204, 82)', color: '#fff'}}
                 >
                     <h3>${ matches[ 2 ] }</h3>
                 </VerticalTimelineElement>`;
