@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Plugin Name: Timeline Block
+ * Plugin Name: Mark Tate - Timeline Block
  * Description: Timeline UI Component
  * Version: 0.0.1
  */
