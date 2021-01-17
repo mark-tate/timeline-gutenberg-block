@@ -20,7 +20,7 @@ function VerticalTimelineElementWrapper( props ) {
 		<VerticalTimelineElement
 			contentStyle={ {
 				background: 'rgb(33, 150, 243)',
-				color: '#424242',
+				color: '#fff',
 			} }
 			contentArrowStyle={ {
 				borderRight: '7px solid  rgb(33, 150, 243)',
