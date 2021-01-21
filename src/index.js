@@ -1,7 +1,7 @@
 import { registerBlockType } from '@wordpress/blocks';
 import { __ } from '@wordpress/i18n';
-import Edit from './edit';
-import Save from './save';
+import Edit from './Edit';
+import Save from './Save';
 
 registerBlockType( 'mark-tate/timeline-block', {
 	title: __( 'Timeline', 'mark-tate' ),
